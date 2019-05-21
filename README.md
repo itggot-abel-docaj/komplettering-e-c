@@ -12,6 +12,60 @@ I task-baren längst ner i windows ser du till höger en röd plupp. När du är
 
 Filmen sparas i mp4-formatet. I Classroom finnas en separat inlämningsuppgift där du laddar upp filmen senast ett dygn efter provets slut.
 
+#### Funktionalitet
+
+Den här uppgiften går ut på att skriva ett program som läser in en fil med provsvar för en elev, och jämför provsvaren med svaren från en facit-fil, och skriver för varje fråga ut om eleven svarat rätt. Sedan skriver provet ut totala antal rätt eleven hade i provet.
+
+Följande funktionalitet ska finnas:
+
+Programmet ska fråga efter vilken fil som ska användas.
+
+Därefter skriver programmet för varje rad ut frågans nummer följt av "Rätt" eller "Fel" beroende på om eleven svarat rätt eller fel enligt facitfilen. Slutligen skriver programmet ut antalet poäng eleven fick på provet.
+
+
+![0.gif](./0.gif)
+
+#### Dataformat
+
+##### Facitfilen
+* facitfilen består av en *rad* text per provfråga. 
+* Varje rad har ett tecken (a, b, c ,d, e eller f) som visar vilket svarsalternativ som är rätt.
+
+
+##### Svarsfilen
+
+* svarsfilen består av en *rad* text per provfråga. 
+* Varje rad har ett tecken (a, b, c ,d, e eller f) som visar vilket svarsalternativ eleven valt.
+
+
+Exempel facitfil (enbart 10 rader):
+```
+a
+b
+b
+a
+f
+e
+d
+c
+c
+b
+```
+
+Exempel svarsfil (enbart 10 rader):
+```
+b
+b
+b
+a
+d
+e
+d
+a
+c
+b
+```
+
 ## Bedömningsmatris
 
 #### Planering & Problemanalys
@@ -66,57 +120,3 @@ I din självbedömning:
 - Vad kände du gick mindre bra?
 - Hur kan du förbättra ditt program?
 - Finns det något som kan optimeras?
-
-#### Funktionalitet
-
-Den här uppgiften går ut på att skriva ett program som läser in en fil med provsvar för en elev, och jämför provsvaren med svaren från en facit-fil, och skriver för varje fråga ut om eleven svarat rätt. Sedan skriver provet ut totala antal rätt eleven hade i provet.
-
-Följande funktionalitet ska finnas:
-
-Programmet ska fråga efter vilken fil som ska användas.
-
-Därefter skriver programmet för varje rad ut frågans nummer följt av "Rätt" eller "Fel" beroende på om eleven svarat rätt eller fel enligt facitfilen. Slutligen skriver programmet ut antalet poäng eleven fick på provet.
-
-
-![0.gif](./0.gif)
-
-#### Dataformat
-
-##### Facitfilen
-* facitfilen består av en *rad* text per provfråga. 
-* Varje rad har ett tecken (a, b, c ,d, e eller f) som visar vilket svarsalternativ som är rätt.
-
-
-##### Svarsfilen
-
-* svarsfilen består av en *rad* text per provfråga. 
-* Varje rad har ett tecken (a, b, c ,d, e eller f) som visar vilket svarsalternativ eleven valt.
-
-
-Exempel facitfil (enbart 10 rader):
-```
-a
-b
-b
-a
-f
-e
-d
-c
-c
-b
-```
-
-Exempel svarsfil (enbart 10 rader):
-```
-b
-b
-b
-a
-d
-e
-d
-a
-c
-b
-```
